@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sudoku Solver</title>
+	<style type="text/css">
+		.class1{
+			font-size: 20pt;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<p><h1>Enter the value of n :</h1></p>
+		<br>
+		<select id="tableSize" class="class1">
+			<option class="class1">4</option>
+			<option class="class1">9</option>
+			<option class="class1">16</option>
+		</select>
+		<br>
+		<br><br><br><br><br>
+	<button onclick="clicked()" class="class1">Generate table</button>
+	</center>
+	<script type="text/javascript">
+		function clicked(){
+			let n = document.getElementById('tableSize').value;
+			sessionStorage.setItem('number',n);
+			window.open('index.html','_self');
+		}
+	</script>
+	<script type="text/javascript" src="frame.js"></script>
+</body>
+</html>
